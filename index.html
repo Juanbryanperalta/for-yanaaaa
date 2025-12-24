@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for yanaaaaa</title>
+    <style>
+        body {
+            margin: 0;
+            height: 500px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #d8b4f8, #e8d9fc);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }   
+        h1 {
+            font-size: 3rem;
+            color: #6a0dad;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.3rem;
+            margin: 20px;
+            animation: fadeIn 3s ease-in;
+            color: #4a0072;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            background-color: #6a0dad;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 4s ease-in;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4a0072;
+            transform: scale(1.1);
+        }
+        .hidden-message {
+            display: none;
+            font-size: 1.5rem;
+            color: #4a0072;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in;
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .heart {
+            font-size: 4rem;
+            color: #6a0dad;
+            animation: heartbeat 1.5s infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; background-color: #d8b4f8; }
+            50% { background-position: 100% 50%; background-color: #e8d9fc; }
+            100% { background-position: 0% 50%; background-color: #f5effc; }
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .floating-pill {
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            background: linear-gradient(to right, #ff4d6d, #ffb3c1);
+            border-radius: 10px;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.8;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>HI ARYANNAAAA</h1>
+        <p>open mo nga to bilis antagal kailan bat antagal mo iopen WHAJJAAJAJJJAAJ</p>
+        <button onclick="showMessage()">op is en</button>
+        <div class="hidden-message" id="hiddenMessage">
+            <br>
+            <strong>bat nga ba kita naging crush? ez ganto kasi yan </strong>
+            <br><br>
+            <em>WKAHJAHSAHDAJASDHUJDAHJAH HIYA AKO</em>
+            <br><br>
+            <p>nung una kasi sabi ko happy crush lang dapat kasi diba, sa tuwing nagkakatitigan tayo dati nag susungitan tayong dalawaa WAHHHHHHH tapos nag lalaro na tayo ng ml non tas hanggang sa tumagal ayun nahuhulog nako sayoo, nafeel ko na nung time na yon na nagiging totoo na talaga feelings ko sayo and hindi na sya happy crush lang KAW KASI EEEEEE JWHAJKDAHJKHSKJA tas diba nag dedevelop  na yung feelingss ko sayo ETO YUNG TIME NA DISCOVER KO YUNG KANTA NA MISTERYOSOOO AND TILA TALAA NA NALAMAN KO SAYOOO kumbaga yearner nako neto WHAJAAJJAJAJAJA ikaw yung naiisip tuwing pinapa tugtog ko yan and isa pa yung cowboy in la. LOVE NA LOVE KO YUNG SONG NA YON HA hanggang sa sumama na tayo sa lets dancee tas ayon mas lalo akong nafall sayo nonnnn aray kooo WAAHAJHAJHJAHJHJA tas eto na me now happy kasi inaadmire kitaa i know na di kapa ready sa isang rs and want ko din na mag focus muna tayo sa studies natinnnn PERIODTTTTTT k bye.    </p>
+            
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('hiddenMessage');
+            message.style.display = 'block';
+            message.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
